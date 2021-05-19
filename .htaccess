@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^verity\.cedipayghana\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.verity\.cedipayghana\.com$
+RewriteRule ^verity\.cedipayghana\.com$ "https\:\/\/verity\.cedipayghana\.com\/" [R=302,L]
+
