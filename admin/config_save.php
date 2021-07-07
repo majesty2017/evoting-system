@@ -8,9 +8,19 @@
 
 	if(isset($_POST['save'])){
 		$title = $_POST['title'];
+		$date = $_POST['date'];
+		$desc = $_POST['desc'];
 
 		$file = 'config.ini';
-		$content = 'election_title = '.$title;
+//		$content = 'election_title = '.$title;
+//		$content = 'election_date = '.$date;
+//		$content = 'election_desc = '.$desc;
+
+		$content = [
+		    'election_title' => $title,
+		    'election_date' => $date,
+		    'election_desc' => $desc,
+        ];
 
 		file_put_contents($file, $content);
 

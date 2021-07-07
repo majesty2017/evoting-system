@@ -71,7 +71,7 @@
                             <a href='".$image."' data-fancybox ><img src='".$image."' width='30px' height='30px'></span></a>
                             <a href='#edit_photo' data-toggle='modal' class='pull-right photo' data-id='".$row['id']."'><span class='fa fa-edit'></span></a>
                           </td>
-                          <td>".$row['voters_id']."</td>
+                          <td>".$row['student_id']."</td>
                           <td>
                             <button class='btn btn-success btn-sm edit btn-flat' data-id='".$row['id']."'><i class='fa fa-edit'></i> Edit</button>
                             <button class='btn btn-danger btn-sm delete btn-flat' data-id='".$row['id']."'><i class='fa fa-trash'></i> Delete</button>

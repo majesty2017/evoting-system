@@ -16,9 +16,20 @@
                 <form class="form-horizontal" method="POST" action="config_save.php?return=<?php echo basename($_SERVER['PHP_SELF']); ?>">
                   <div class="form-group">
                     <label for="title" class="col-sm-3 control-label">Title</label>
-
                     <div class="col-sm-9">
                       <input type="text" class="form-control" id="title" name="title" value="<?php echo $title; ?>">
+                    </div>
+                  </div>
+                    <div class="form-group">
+                    <label for="title" class="col-sm-3 control-label">Date</label>
+                    <div class="col-sm-9">
+                      <input type="date" class="form-control" id="date" name="date" value="<?php echo $date; ?>">
+                    </div>
+                  </div>
+                    <div class="form-group">
+                    <label for="title" class="col-sm-3 control-label">Description</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" id="desc" name="desc" value="<?php echo $desc; ?>">
                     </div>
                   </div>
               </div>
