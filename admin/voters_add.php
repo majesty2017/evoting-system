@@ -7,7 +7,7 @@ include 'includes/session.php';
 
 	if(isset($_POST['add'])){
         //generate voters id & password
-        $set = '123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $set = '1234567890';
         $set_passwd = '123456789abcdefghijklmnopqrstuvw!@#$%^&*()xyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 		$firstname = $_POST['firstname'];
 		$lastname = $_POST['lastname'];
@@ -28,8 +28,8 @@ include 'includes/session.php';
             $client->get('https://deywuro.com/api/sms?', [
                 'verify' => false,
                 'query' => [
-                    'username' => USERNAME,
-                    'password' => PASSWORD,
+                    'username' => 'majestysoft',
+                    'password' => '!@Majesty@6611',
                     'destination' => $phone,
                     'source' => 'EVOTING',
                     'message' => $message

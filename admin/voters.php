@@ -124,11 +124,17 @@ function getRow(id){
     data: {id:id},
     dataType: 'json',
     success: function(response){
-      $('.id').val(response.id);
-      $('#edit_firstname').val(response.firstname);
-      $('#edit_lastname').val(response.lastname);
-      $('#edit_password').val(response.password);
-      $('.fullname').html(response.firstname+' '+response.lastname);
+        console.log(response)
+        if (response) {
+            $.each(response, function (k, v) {
+                $('#edit_'+k).val(v)
+            })
+        }
+      // $('.id').val(response.id);
+      // $('#edit_firstname').val(response.firstname);
+      // $('#edit_lastname').val(response.lastname);
+      // $('#edit_password').val(response.password);
+      // $('.fullname').html(response.firstname+' '+response.lastname);
     }
   });
 }

@@ -65,7 +65,7 @@
             </div>
             <div class="modal-body">
               <form class="form-horizontal" method="POST" action="voters_edit.php">
-                <input type="hidden" class="id" name="id">
+                <input type="hidden" class="id" name="id" id="edit_id">
                 <div class="form-group">
                     <label for="edit_firstname" class="col-sm-3 control-label">Firstname</label>
 
@@ -84,14 +84,14 @@
                       <label for="password" class="col-sm-3 control-label">Phone number</label>
 
                       <div class="col-sm-9">
-                          <input type="tel" class="form-control" id="phone" name="phone" required>
+                          <input type="tel" class="form-control" id="edit_phone" name="phone" required>
                       </div>
                   </div>
                   <div class="form-group">
                       <label for="student_id" class="col-sm-3 control-label">Student ID</label>
 
                       <div class="col-sm-9">
-                          <input type="text" class="form-control" id="student_id" name="student_id" required>
+                          <input type="text" class="form-control" id="edit_student_id" name="student_id" required>
                       </div>
                   </div>
             </div>
