@@ -1,8 +1,9 @@
 <?php
-	$conn = new mysqli('localhost', 'root', '', 'evoting');
+define('USERNAME', 'majestysoft');
+define('PASSWORD', '!@Majesty@6611');
 
-	if ($conn->connect_error) {
-	    die("Connection failed: " . $conn->connect_error);
-	}
-	
-?>
+$conn = new mysqli('localhost', 'root', '', 'evoting');
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}

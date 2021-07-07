@@ -28,8 +28,8 @@ include 'includes/session.php';
             $client->get('https://deywuro.com/api/sms?', [
                 'verify' => false,
                 'query' => [
-                    'username' => 'majestysoft',
-                    'password' => '!@Majesty@6611',
+                    'username' => USERNAME,
+                    'password' => PASSWORD,
                     'destination' => $phone,
                     'source' => 'EVOTING',
                     'message' => $message
